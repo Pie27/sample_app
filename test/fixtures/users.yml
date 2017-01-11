@@ -1,1 +1,4 @@
-#empty 
+PTM:
+  name: PTM example
+  email: ptm@example.com
+  password_digest: <%= User.digest('password') %>

@@ -13,7 +13,8 @@ end
 def create
 	@user = User.new(user_params)
 	if @user.save
-		#handle a successful save. 
+		#handle a successful save.
+		log_in @user
 		flash[:success] = "Welcome to the Sample App!!"
 		redirect_to @user  #equivalent to -- redirect_to user_url(@user)
 	else
@@ -27,4 +28,3 @@ private
 	end
 
 end
-
