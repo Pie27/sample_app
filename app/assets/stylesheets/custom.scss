@@ -15,7 +15,7 @@ $gray-medium-light: #eaeaea;
 	box-sizing: border-box;
 }
 
-/*universal*/ 
+/*universal*/
 
 body {
 	padding-top: 60px;
@@ -114,7 +114,7 @@ footer {
 		}
 	}
 
-	
+
 }
 
 
@@ -168,7 +168,7 @@ aside {
 	margin-top: 15px;
 }
 
-/* forms */ 
+/* forms */
 
 input, textarea, select, .uneditable-input {
 	border: 1px solid #bbb;
@@ -196,16 +196,16 @@ input {
 	}
 }
 
+.checkbox {
+	margin-top: -10px;
+	margin-bottom: 10px;
+	span {
+		margin-left: 20px;
+		font-weight: normal;
+	}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+#session_remember_me {
+	width: auto;
+	margin-left: 0;
+}
