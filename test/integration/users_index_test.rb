@@ -16,7 +16,7 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
     #   end
     # end
 
-    def setup
+  def setup
     @admin     = users(:PTM)
     @non_admin = users(:pyi)
   end
