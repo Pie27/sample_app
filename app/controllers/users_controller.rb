@@ -22,9 +22,13 @@ def create
 	@user = User.new(user_params)
 	if @user.save
 		#handle a successful save.
-		log_in @user
-		flash[:success] = "Welcome to the Sample App!!"
-		redirect_to @user  #equivalent to -- redirect_to user_url(@user)
+		# log_in @user
+		# flash[:success] = "Welcome to the Sample App!!"
+		# redirect_to @user  #equivalent to -- redirect_to user_url(@user)
+    #UserMailer.account_activation(@user).deliver_now
+    @user.send_activation_email
+    flash[:info] = "Please check your email to activate your account."
+    redirect_to root_url
 	else
 		render 'new'
 	end
@@ -75,6 +79,6 @@ private
   #to confirm admin user
   def admin_user
     redirect_to(root_url) unless current_user.admin?
-  end 
+  end
 
 end
