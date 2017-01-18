@@ -1,0 +1,15 @@
+one:
+  follower: PTM
+  followed: lana
+
+two:
+  follower: PTM
+  followed: malory
+
+three:
+  follower: lana
+  followed: PTM
+
+four:
+  follower: archer
+  followed: PTM
